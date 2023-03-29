@@ -1,0 +1,24 @@
+pipeline {
+
+    \\agent any 
+    // container (docker)
+    
+    stages {  
+            stage ('Build') {  
+                steps {  
+                        echo 'Running build phase...' 
+                }
+            }
+                        
+            stage('Bhargavi'){
+               steps {
+                       echo 'she is a Bad'
+                }
+              }  
+            }  
+
+ 
+}
+
+
+     
