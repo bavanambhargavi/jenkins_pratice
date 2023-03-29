@@ -1,21 +1,31 @@
 pipeline {  
     agent any  
     stages {  
-            stage ('Build') {  
+            stage ('Build') { 
+                steps{ 
                 echo "Build this job" 
+            }
             }  
             stage ('Test') {
-                echo "testing the job"  
+                steps{
+                echo "testing the job"
+                }  
                  
             }  
             stage ('QA') { 
-               echo 'pip install pytest' 
+                steps{
+                sh 'pip install pytest'
+                } 
             }  
-            stage ('Deploy') {  
-                echo "Deployement" 
+            stage ('Deploy') {
+                steps{
+                echo "Deployement"
+                } 
             }  
-            stage ('Monitor') {  
-                echo "Monitoring the job" 
+            stage ('Monitor') { 
+                steps{
+                echo "Monitoring the job"
+                } 
             }
     }
 }  
