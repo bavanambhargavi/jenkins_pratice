@@ -14,7 +14,6 @@ pipeline {
             }  
             stage ('QA') { 
                 steps{
-                sh "pip install python 3.10.7"
                 sh "pip install playwright"
                 sh "pip install pytest"
                 sh "pip install pytest-playwright"
