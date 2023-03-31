@@ -14,7 +14,11 @@ pipeline {
             }  
             stage ('QA') { 
                 steps{
-                echo " "
+                sh "pip install python"
+                sh "pip install playwright"
+                sh "pip install pytest"
+                sh "pip install pytest-playwright"
+                sh "pip install allure-pytest"
                 } 
             }  
             stage ('Deploy') {
