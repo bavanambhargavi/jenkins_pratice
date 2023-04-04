@@ -25,7 +25,6 @@ pipeline {
                 echo " "
                 catch(e){
                     currentBuild.result = 'FAILURE'
-                    
                     mail to: 'bavanam.bhargavi@gmail.com', 'bavanambhargavi14@gmail.com', 
                      
                 }
