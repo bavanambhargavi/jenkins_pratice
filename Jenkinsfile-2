@@ -28,6 +28,8 @@ pipeline {
             stage ('Monitor') { 
                 steps{
                 echo "Monitoring the job"
+                sh "pip install pytest-html"
+                sh "pip install junit--xml"
                 } 
             }
     }
