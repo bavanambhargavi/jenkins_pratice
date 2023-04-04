@@ -30,6 +30,9 @@ pipeline {
                 echo "Monitoring the job"
                 sh "pip install pytest-html"
                 sh "pip install junit--xml"
+                sh "npm install"
+                sh "pip install pytest--html"
+
                 } 
             }
     }
