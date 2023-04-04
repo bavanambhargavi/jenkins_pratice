@@ -20,16 +20,14 @@ pipeline {
                 sh "pip install allure-pytest"
                 } 
             }  
-            stage ("failure")
+            stage ("failure"){
                 steps{
                 echo " "
-                // catch(e){
-                //     currentBuild.result = 'FAILURE'
-                //     mail to: 'bavanam.bhargavi@gmail.com', 'bavanambhargavi14@gmail.com', 
-                     
                 }
-                } 
-            // }  
+            }
+             
+    
+
             stage ('Monitor') { 
                 steps{
                 echo "Monitoring the job"
